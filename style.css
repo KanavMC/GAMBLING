@@ -1,0 +1,33 @@
+button{
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: rgb(0, 179, 255, 0.744);
+}
+button:hover{
+    background-color: rgba(199, 161, 214, 0.492);
+}
+body{
+    background-color: rgba(255, 0, 0, 0.341);
+}
+p{
+    font-size: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: rgba(0, 179, 255, 0.744);
+}
+h1{
+    color: rgba(0, 179, 255, 0.744);
+    font-size: 50px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+img{
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+}
+input{
+    background-color: rgba(0, 179, 255, 0.744);
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: rgba(255, 0, 0, 0.61);
+}
