@@ -1,5 +1,5 @@
 let tokens = 5;
-alert("Welcome to the Token Game! You start with 5 tokens. Each game costs 5 tokens to play. If you win, you can earn more tokens! You can also buy tokens or redeem them for cash! Good luck!");
+alert("Welcome to the Totally Fair Gambling Game! You start with 5 tokens. Each game costs 5 tokens to play. If you win, you can earn more tokens! You can also buy tokens or redeem them for cash! Good luck!");
 
 function updateTokens() {
     document.getElementById("count").textContent = tokens;
