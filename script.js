@@ -53,6 +53,12 @@ function playGame2() {
     if (tokens < 5) {
         alert("Not enough tokens!");
         return;
+    } else if (document.getElementById("guess").value === "") {
+        alert("Please enter a number between 1 and 10!");
+        return;
+    } else if (document.getElementById("guess").value < 1 || document.getElementById("guess").value > 10) {
+        alert("Please enter a number between 1 and 10!");
+        return;
     }
     
     tokens -= 5;
