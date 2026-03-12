@@ -42,6 +42,12 @@ function redeemTokens() {
     if (document.getElementById("count").value === "0") {
         alert("You have no tokens!");
         return;
+    } else if (document.getElementById("creditCard").value === "") {
+        alert("Please enter your credit card number!");
+        return;
+    } else if (document.getElementById("creditCard").value.length !== 16) {
+        alert("Please enter a valid credit card number (16 Digits)!");
+        return;
     } else {
         tokens = 0;
         alert("Thank you for redeeming your tokens! You have redeemed all of your tokens into your bank account!");
