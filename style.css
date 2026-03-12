@@ -40,12 +40,3 @@ button:hover{
         to { transform: rotate(15deg);
         }
     }
-input:hover{
-    animation: spin2 0.2s linear infinite;
-}
-@keyframes spin2 {
-    from { transform: rotate(0deg);
-    }
-    to { transform: rotate(-15deg);
-    }
-}
