@@ -54,4 +54,19 @@ function playGame2() {
         alert("Not enough tokens!");
         return;
     }
+    
+    tokens -= 5;
+
+    let win2 = Math.random() < 0.1;
+
+    if (win2) {
+        tokens += 20;
+        alert("Congratulations! You guessed my number! You won 20 tokens!");
+    } else {
+        alert("Womp womp. You lost.");
+    }
+
+    updateTokens();
 }
+
+updateTokens();
