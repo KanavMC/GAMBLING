@@ -1,5 +1,5 @@
 let tokens = 5;
-alert("Welcome to the Totally Fair Gambling Game! You start with 5 tokens. Each game costs 5 tokens to play. If you win, you can earn more tokens! You can also buy tokens or redeem them for cash! Good luck!");
+alert("Welcome to the Totally Fair Gambling Game! You start with 5 tokens. Each game costs tokens to play. If you win, you can earn more tokens! You can also buy tokens or redeem them for cash! Good luck!");
 
 function updateTokens() {
     document.getElementById("count").textContent = tokens;
@@ -80,5 +80,52 @@ function playGame2() {
 
     updateTokens();
 }
+function playGame3() {
+
+    if (tokens < 2) {
+        alert("Not enough tokens!");
+        return;
+    } 
+    
+    tokens -= 2;
+
+    let win3 = Math.random() < 0.5;
+
+    if (win3) {
+        tokens += 4;
+        alert("Congratulations! You guessed the side! You won 4 tokens!");
+    } else {
+        alert("Womp womp. You lost.");
+    }
+
+    updateTokens();
+}
+function spin() {
+
+if (tokens < 2) {
+        alert("Not enough tokens!");
+        return;
+    } 
+
+    tokens -= 2;
+    
+    let symbols = ["🍒","🍋","⭐","💎","7"];
+
+    let a = symbols[Math.floor(Math.random()*symbols.length)];
+    let b = symbols[Math.floor(Math.random()*symbols.length)];
+    let c = symbols[Math.floor(Math.random()*symbols.length)];
+
+    if (a == b && b == c) {
+        alert(a + " " + b + " " + c + "\nYou won ten tokens!");
+        tokens += 20;
+    } else if (a == b || b == c || a == c) {
+        alert(a + " " + b + " " + c + "\nHalf win: five tokens!");
+        tokens += 5;
+    } else {
+        alert(a + " " + b + " " + c + "\nYou lost!");
+    }
+
+}
+
 
 updateTokens();
