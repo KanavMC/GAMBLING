@@ -116,7 +116,7 @@ if (tokens < 2) {
     let c = symbols[Math.floor(Math.random()*symbols.length)];
 
     if (a == b && b == c) {
-        alert(a + " " + b + " " + c + "\nYou won ten tokens!");
+        alert(a + " " + b + " " + c + "\nYou won twenty tokens!");
         tokens += 20;
     } else if (a == b || b == c || a == c) {
         alert(a + " " + b + " " + c + "\nHalf win: five tokens!");
