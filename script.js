@@ -109,7 +109,7 @@ if (tokens < 2) {
 
     tokens -= 2;
     
-    let symbols = ["🍒","🍋","⭐","💎","7"];
+    let symbols = ["🍒","🍋","⭐","💎","7️⃣"];
 
     let a = symbols[Math.floor(Math.random()*symbols.length)];
     let b = symbols[Math.floor(Math.random()*symbols.length)];
