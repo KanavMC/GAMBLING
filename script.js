@@ -118,11 +118,14 @@ if (tokens < 2) {
     if (a == b && b == c) {
         alert(a + " " + b + " " + c + "\nYou won thirty-five tokens!");
         tokens += 35;
+        return;
     } else if (a == b || b == c || a == c) {
         alert(a + " " + b + " " + c + "\nHalf win: five tokens!");
         tokens += 5;
+        return;
     } else {
         alert(a + " " + b + " " + c + "\nYou lost!");
+        return;
     }
 
 }
