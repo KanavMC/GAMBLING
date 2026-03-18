@@ -66,7 +66,7 @@ function playGame2() {
         alert("Please enter a number between 1 and 10!");
         return;
     }
-    
+
     tokens -= 5;
 
     let win2 = Math.random() < 0.1;
@@ -85,8 +85,8 @@ function playGame3() {
     if (tokens < 2) {
         alert("Not enough tokens!");
         return;
-    } 
-    
+    }
+
     tokens -= 2;
 
     let win3 = Math.random() < 0.5;
@@ -102,18 +102,19 @@ function playGame3() {
 }
 function spin() {
 
-if (tokens < 2) {
+    if (tokens < 2) {
         alert("Not enough tokens!");
         return;
-    } 
+    }
 
     tokens -= 2;
-    
-    let symbols = ["🍒","🍋","⭐","💎","7️⃣"];
 
-    let a = symbols[Math.floor(Math.random()*symbols.length)];
-    let b = symbols[Math.floor(Math.random()*symbols.length)];
-    let c = symbols[Math.floor(Math.random()*symbols.length)];
+    let symbols = ["🍒", "🍋", "⭐", "💎", "7️⃣"];
+
+    let a = symbols[Math.floor(Math.random() * symbols.length)];
+    let b = symbols[Math.floor(Math.random() * symbols.length)];
+    let c = symbols[Math.floor(Math.random() * symbols.length)];
+    console.log(a, b, c);
 
     if (a == b && b == c) {
         alert(a + " " + b + " " + c + "\nYou won thirty-five tokens!");
@@ -129,6 +130,6 @@ if (tokens < 2) {
     }
 
 }
-
+console.log(tokens);
 
 updateTokens();
