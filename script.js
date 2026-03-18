@@ -82,18 +82,18 @@ function playGame2() {
 }
 function playGame3() {
 
-    if (tokens < 2) {
+    if (tokens < 3) {
         alert("Not enough tokens!");
         return;
     }
 
-    tokens -= 2;
+    tokens -= 3;
 
     let win3 = Math.random() < 0.5;
 
     if (win3) {
-        tokens += 4;
-        alert("Congratulations! You guessed the side! You won 4 tokens!");
+        tokens += 5;
+        alert("Congratulations! You guessed the side! You won 5 tokens!");
     } else {
         alert("Womp womp. You lost.");
     }
@@ -103,12 +103,12 @@ function playGame3() {
 
 function spin() {
 
-    if (tokens < 2) {
+    if (tokens < 3) {
         alert("Not enough tokens!");
         return;
     }
 
-    tokens -= 2;
+    tokens -= 3;
 
     let symbols = ["🍒", "🍋", "⭐", "💎", "7️⃣"];
 
