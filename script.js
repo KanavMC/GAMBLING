@@ -100,6 +100,7 @@ function playGame3() {
 
     updateTokens();
 }
+
 function spin() {
 
     if (tokens < 2) {
@@ -117,18 +118,19 @@ function spin() {
     console.log(a, b, c);
 
     if (a == b && b == c) {
-        alert(a + " " + b + " " + c + "\nYou won thirty-five tokens!");
         tokens += 35;
+        alert(a + " " + b + " " + c + "\nYou won thirty-five tokens!");
         return;
     } else if (a == b || b == c || a == c) {
-        alert(a + " " + b + " " + c + "\nHalf win: five tokens!");
         tokens += 5;
+        alert(a + " " + b + " " + c + "\nHalf win: five tokens!");
         return;
     } else {
         alert(a + " " + b + " " + c + "\nYou lost!");
         return;
     }
-
+    
+    updateTokens();
 }
 console.log(tokens);
 
