@@ -120,18 +120,14 @@ function spin() {
     if (a == b && b == c) {
         tokens += 35;
         alert(a + " " + b + " " + c + "\nYou won thirty-five tokens!");
-        return;
     } else if (a == b || b == c || a == c) {
         tokens += 5;
         alert(a + " " + b + " " + c + "\nHalf win: five tokens!");
-        return;
     } else {
         alert(a + " " + b + " " + c + "\nYou lost!");
-        return;
     }
     
     updateTokens();
 }
-console.log(tokens);
 
 updateTokens();
